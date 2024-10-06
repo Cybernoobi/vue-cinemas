@@ -1,0 +1,63 @@
+@media (max-width: 1140px) {
+    .main-title{
+        width: 100%;
+        text-align: center;
+    }
+}
+@media (max-width: 840px) {
+    .series__main{
+        grid-template-rows: repeat(6, 202px);
+    }
+    .series__main-block{
+        grid-column: span 2;
+    }
+    .series__main-block:nth-of-type(2){
+        grid-column: span 4;
+    }
+    .trailer{
+        background: linear-gradient(90deg, #def7ff78 0%, #f4fcff75 45.31%, rgba(255, 255, 255, 0) 100%);
+    }
+    .burger{
+        display: block;
+        visibility: visible;
+    }
+    .header__nav-list{
+        position: fixed;
+        background: rgba(0, 0, 0, 0.499);
+        inset: 0;
+        z-index: 999;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transform: translateY(-110%);
+        transition: 1s;
+    }
+    .header__nav-list a{
+        font-size: 25px;
+    }
+    .burger:hover ~ .header__nav-list{
+        transform: translateY(0);
+    }
+}
+@media (max-width: 450px) {
+    .series__main{
+        grid-template-rows: repeat(8, 202px);
+    }
+    .series__main-block{
+        grid-column: span 4;
+    }
+    .trailer img{
+        width: 100%;
+    }
+    .header__content {
+        background: url(../img/headerBgMobile.jpg) center / cover;
+        text-align: center;
+    }
+    .header__content h1 {
+        font-size: 35px;
+    }
+    .btn {
+        padding: 6px 18px;
+        margin-right: 8px;
+    }
+}
